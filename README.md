@@ -5,7 +5,7 @@ A Simple Telegram URL Shortner Bot With Stats Tracking Made Using Bit.ly And Tel
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) 
 
 <p align="center">
-  <img width="460" height="460" src="https://i.ibb.co/FmwGNZK/ishorturl.jpg">
+  <img width="300" height="300" src="https://i.ibb.co/FmwGNZK/ishorturl.jpg">
 </p>
 
 <h2>Wanna Host One Your Self?</h2>
