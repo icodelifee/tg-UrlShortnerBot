@@ -10,13 +10,11 @@ var Bypasser = require('node-bypasser');
 bot.on('text', (msg) => {
     var toShort = msg.text;
     if(msg.text.includes('/bp',0)){ return }
+    if(msg.text.includes('/start',0)){ return }
     var checkURL = urlCheck({ exact: true, strict: false }).test(toShort);
     if (checkURL === true) {
         if (toShort.indexOf('http' || 'https') === -1) {
             toShort = "https://" + toShort;
-        }
-        var data = {
-            long_url: toShort
         }
         bitly.shorten(toShort).then((res) => {
             let replyMarkup = bot.inlineKeyboard([
@@ -94,5 +92,24 @@ bot.on(/^\/bp (.+)$/, (msg, props) => {
         }
     })
 })
+
+// General Commands
+
+bot.on('/start', (msg) => {
+    let replyMarkup = bot.inlineKeyboard([
+        [
+            bot.inlineButton("Source Code", {url:"https://github.com/icodelifee/tg-UrlShortnerBot" } )
+        ],
+        [
+            bot.inlineButton("Support Chat",{ url: "https://t.me/itorrentbotsupport" })
+        ]
+    ])
+    msg.reply.text(`<b>Hi ${msg.chat.first_name}, I Can Short And Bypass Yout Links.</b>\n-/help For More Info\n<code>Bot Developer : </code>@iCodeLife`, {
+        asReply: true,
+        parseMode: "html",
+        replyMarkup
+    }).catch((err) => console.log(err))
+}
+);
 
 bot.start();
