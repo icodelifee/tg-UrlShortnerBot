@@ -41,7 +41,7 @@ npm i --save
 
 4.Run The Bot
 ```javascript
-npm index 
+node index 
 or
 nodemon index
 ```
