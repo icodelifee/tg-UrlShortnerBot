@@ -102,7 +102,7 @@ bot.on('/start', (msg) => {
             bot.inlineButton("Source Code", {url:"https://github.com/icodelifee/tg-UrlShortnerBot" })
         ],
         [
-            bot.inlineButton("Support Chat",{ url: "https://t.me/itorrentbotsupport" })
+            bot.inlineButton("Support Chat",{ url: "https://t.me/itorrentsupport" })
         ]
     ])
     msg.reply.text(`<b>Hi ${msg.chat.first_name}, I Can Short And Bypass Yout Links.</b>\n-/help For More Info\n<code>Bot Developer : </code>@iCodeLife`, {
