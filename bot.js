@@ -3,9 +3,9 @@ const config = require('./config')
 const bot = new TeleBot(config.botToken);
 const userToken = config.bitlyToken
 const urlCheck = require('url-regex');
-var Bitly = require('bitlyapi');
-var bitly = new Bitly(userToken);
-var Bypasser = require('node-bypasser');
+const Bitly = require('bitlyapi');
+const bitly = new Bitly(userToken);
+const Bypasser = require('node-bypasser');
 
 bot.on('text', (msg) => {
     var toShort = msg.text;
