@@ -9,9 +9,8 @@
   "author": "icodelife",
   "license": "ISC",
   "dependencies": {
-    "bitly": "^6.0.8",
-    "bitly-node-api": "0.0.4",
-    "bitlyapi": "^1.0.9",
+    "axios": "^0.21.0",
+    "bitly": "^7.1.0",
     "node-bypasser": "^1.8.0",
     "nodemon": "^1.18.10",
     "telebot": "^1.2.6",
