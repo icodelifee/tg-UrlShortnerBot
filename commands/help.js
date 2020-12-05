@@ -6,7 +6,7 @@ const bot = new TeleBot(config.botToken);
 const help = (msg) => {
 	const replyMarkup = bot.inlineKeyboard([
 		[bot.inlineButton('Source Code', { url: 'https://github.com/icodelifee/tg-UrlShortnerBot' })],
-		[bot.inlineButton('Support Chat', { url: 'https://t.me/itorrentbotsupport' })],
+		[bot.inlineButton('Support Chat', { url: 'https://t.me/itorrentchat' })],
 	]);
 	msg.reply
 		.text(
